@@ -2,13 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <title>SmartNinja with Jinja</title>
+
         <link rel="stylesheet" href="/static/css/style.css">
-        <title>Hello, SmartNinja</title>
     </head>
 
     <body>
-        <h1>Welcome back to HTML ;)</h1>
-        <b>Sedaj furamo template</b><br>
-        <img src="/static/img/smartninja-logo.png">
+        <h1>Let's try out Jinja!</h1>
+        <p>
+            <a href="/">Home</a>,
+            <a href="/about-me">About me</a>
+        </p>
+
+        {% block content %}
+        {% endblock content %}
     </body>
 </html>
